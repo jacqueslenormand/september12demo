@@ -30,9 +30,12 @@ public class CubeController : MonoBehaviour {
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             rb.useGravity = false;
+            rb.velocity = Vector3.zero;
+
             Vector3 pos = gameObject.transform.position;
             pos.y = 0;
             gameObject.transform.position = pos;
+
         }
 	}
 
